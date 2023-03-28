@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo Çalışması</title>
+    <style>
+        .divOzellik{
+            width: 100%;
+            height: 180px;
+            background-color: darksalmon;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+<!--
+    h1,..., h7, p gibi tagler Block taglerdir satırın tamamını kaplar
+    span inline tag'dır yazılan metin kadar yer kaplar
+    img = (image) resim eklemek için kullanilir
+        src = source(kaynak) dosyanın yeri
+        alt = dosya bulunamazsa yapılacak işlem
+        wight = genişlik
+        height = yukseklik
+    a = link bağlantısı eklemek için kullanılır
+        href = gidilmek istenen adres yazılır
+        target = "_blank" -> yeni sekmede açmaya yarar
+    ol = ordered list(sıralı liste)
+        type = sırala şeklini belirler
+    ul = unordered list(sıralı olmayan liste)
+    li = liste elemanları yazılır
+    table = tablo oluştumak için kullanılır
+        border = tabloya kenarlıkları ekler
+    tr = table row (satır) satır oluşturmaya yarar
+    td = table data(veri) sütun oluşturmaya yarar
+    th = table header(başlık) girilen veriyi kalın yazar
+        colspan = girelen metinin verilen sayi kadar sütunu kaplamasını sağlar
+        rowspan = girelen metinin verilen sayi kadar satırı kaplamasını sağlar
+    div = inline metoddur
+        class = sınıf adi vermemizi sağlar
+            . ile cağırılır
+        id = değişken ismi vermemizi sağlar
+            # ile çağırılır
+-->
+<body>
+   
+    <p>Devrek Meslek Yüksekokulu</p>
+    <h4>Bilgisayar Programcılığı</h4>
+
+    <span>İnternet Programciligi II</span>
+    <span>Hafta-5</span>
+    <h3>Uygulama Dersi</h3>
+
+    <hr>
+
+    <center>
+        <img src="resimler/turkBayragi.png" alt="Turk Bayrağı Resmi Bulunamadı!"
+        width="512" height="450"/>
+        <h3>İSTİKLÂL MARŞI</h3>
+        <p>Korkma, sönmez bu şafaklarda yüzen al sancak;</p>
+        <p>Sönmeden yurdumun üstünde tüten en son ocak.</p>
+        <p>O benim milletimin yıldızıdır, parlayacak;</p>
+        <p>O benimdir, o benim milletimindir ancak.</p>
+        <p>Çatma, kurban olayım çehreni ey nazlı hilâl!</p>
+        <p>Kahraman ırkıma bir gül… ne bu şiddet bu celâl?</p>
+        <p>Sana olmaz dökülen kanlarımız sonra helâl,</p>
+        <p>Hakkıdır, Hakk’a tapan, milletimin istiklâl.</p>
+    </center>
+    <hr>
+    <p>Üniversitesinin sayfasına gitmek için<a href="https://w3.beun.edu.tr/"> tıklayınız!</a></p>
+    <a href="https://www.tccb.gov.tr/assets/dosya/istiklalmarsi_metin.pdf" target="_blank">
+       <img src="resimler/turkBayragi.png" alt="Turk Bayrağı"
+       width="50"
+       height="50">
+    </a>
+
+    <hr>
+
+    <h3>İçecekler</h3>
+    <ul>
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Oralet</li>
+    </ul>
+
+    <h2>İçecekler</h2>
+
+    <ol type="i">
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Oralet</li>
+    </ol>
+    <hr>
+
+    <ol type="1">
+        <li>SICAK İÇECEKLER
+            <ol type="I">
+                <li>ÇAY</li>
+                <li>KAHVE
+                    <ol type="a">
+                        <li>TÜRK KAHVESİ</li>
+                        <li>NESCAFE</li>
+                    </ol>
+                </li>
+                <li>SICAK ÇİKOLATA</li>
+            </ol>
+        </li>
+        <li>SOĞUK İÇECEKLER
+            <ol type="1">
+                <li>MEYVE SULARI
+                    <ul>
+                        <li>Vişne</li>
+                        <li>Şeftali</li>
+                        <li>Kayısı</li>
+                        <li>Elma</li>
+                    </ul>
+                </li>
+                <li>LİMONATA</li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+
+    <table border="5px" bordercolor="rgb(30, 50, 78)">
+        <tr>
+            <th colspan="3">Öğrenci Bilgileri</th>
+        </tr>
+        <tr>
+            <th>Öğrenci Numarası</th>
+            <th>Öğrenci Adı</th>
+            <th>Öğrenci Soyadı</th>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Metin</td>
+            <td>Bozdoğan</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Yusuf</td>
+            <td rowspan="2">Kudu</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Murat</td>
+        </tr>
+
+    </table>
+     <hr>
+
+    <div class="divOzellik">
+        <h3>İnternet Programcılığı II</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, rerum!</p>
+    </div>
+
+
+</body>
+</html>
